@@ -15,7 +15,7 @@ app.get("/", (req:Request, res:Response) => {
 });
 
 app.get('/test', (_req: Request, res: Response) => {
-    return res.send('aaaaExpress Typescript on Vercel')
+    return res.send('aaExpress Typescript on Vercel')
   })
 
   app.get('/ping', (_req: Request, res: Response) => {
