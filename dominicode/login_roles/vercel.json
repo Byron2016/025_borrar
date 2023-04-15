@@ -1,11 +1,15 @@
 {
   "builds": [
     {
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": { "distDir": "dist" }
+    },
+    {
       "src": "dist/index.js",
       "use": "@vercel/node",
       "config": {
-        "includeFiles": ["dist/**"],
-        "distDir": "dist"
+        "includeFiles": ["dist/**"]
       }
     }
   ],
