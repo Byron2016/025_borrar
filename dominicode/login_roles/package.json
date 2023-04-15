@@ -20,7 +20,7 @@
   "scripts": {
     "start": "npm run build && node dist/index.js",
     "byron": "nodemon src/index.ts",
-    "build": "rimraf dist && tsc && mv dist/ .",
+    "build": "rimraf dist && tsc",
     "ts.check": "tsc --project tsconfig.json",
     "add-build": "git add dist",
     "dev": "set debug=* && ts-node-dev --respawn --transpile-only ./src/index.ts"
